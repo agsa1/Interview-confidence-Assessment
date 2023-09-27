@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% block cssfiles %}
+ <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+{% endblock %}
+
+<br>
+<div class="container">
+    <div class="login-box">
+        <center><h3><strong>LOGIN HERE</strong></h3></center><br>
+        <form class="login-form" method="POST" action="{% url 'user_assessment:login_view' %}">
+            {% csrf_token %}
+    <div class="mb-3">
+        <label  class="form-label">username</label>
+        <input type="text" class="form-control" name="u" placeholder="Enter username">
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">password</label>
+        <input type="password" class="form-control" name="p" placeholder="Enter password">
+    </div>
+    <div class="mb-3 button">
+
+        <input type="submit" class="form-control button">
+    </div>
+        </form>
+        <div class="or-divider">
+            <div class="line"></div>
+            <span>OR</span>
+            <div class="line"></div>
+        </div><br><br>
+        <p>Dont have an account?? <a href="{% url 'user_assessment:signup' %}">signup</a> </p>
+
+    </div>
+</div>
+
+{% endblock %}

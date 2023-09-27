@@ -1,0 +1,22 @@
+/* Style for the navigation bar */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    margin-right: 20px; /* Add some space between the navigation items */
+}
+
+.nav-item {
+    margin-right: 10px; /* Add spacing between individual navigation items */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    font-size:26px;
+}
+
+.btn-primary{
+
+}

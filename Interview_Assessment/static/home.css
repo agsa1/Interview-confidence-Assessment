@@ -1,0 +1,18 @@
+
+
+/* Style for the "START" button */
+.custom-button {
+    background-color: #007bff; 
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
